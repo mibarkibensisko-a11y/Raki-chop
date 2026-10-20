@@ -9,61 +9,34 @@
 :root{--navy:#071b49;--blue:#1257c5;--gold:#ffca05;--pink:#f01878;--cream:#fffaf0;--green:#087e55;--ink:#14213d}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f6f8fc}
 a{color:inherit}.topline{background:var(--navy);color:white;text-align:center;padding:8px 12px;font-size:.85rem}
-header{background:linear-gradient(115deg,#071b49,#1456bd);color:white;padding:16px max(16px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.logo{width:48px;height:48px;border-radius:16px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:1.55rem;font-weight:1000;box-shadow:0 4px 0 #bd8d00}.brand h1{font-size:1.55rem;line-height:1;margin:0;font-weight:1000;letter-spacing:-.04em}.brand small{display:block;color:#ffdf62;font-size:.75rem;margin-top:5px;font-weight:700}
+header{background:linear-gradient(115deg,#071b49,#1456bd);color:white;padding:16px max(16px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:10px;text-decoration:none}.logo{width:48px;height:48px;border-radius:16px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:1.7rem}.brand h1{margin:0;font-size:1.8rem;line-height:1}.brand small{display:block;opacity:.9;letter-spacing:.08em;text-transform:uppercase;font-size:.7rem}
 nav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}nav a{font-weight:750;text-decoration:none;font-size:.93rem}nav a:hover{color:var(--gold)}
 .cart-pill{background:var(--gold);color:var(--navy);border:0;border-radius:999px;padding:10px 14px;font-weight:900;cursor:pointer}
 .hero{background:linear-gradient(115deg,rgba(5,22,62,.94),rgba(14,70,159,.84)),radial-gradient(circle at 80% 20%,#ffcb05,transparent 35%);color:white;padding:46px 18px}
 .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
 .kicker{display:inline-block;background:var(--pink);border-radius:99px;padding:7px 12px;font-weight:900;font-size:.82rem}
 .hero h2{font-size:clamp(2.1rem,5vw,4rem);line-height:1.02;margin:15px 0;letter-spacing:-.04em}.hero h2 span{color:var(--gold)}.hero p{font-size:1.08rem;line-height:1.65;color:#e7efff;max-width:620px}
-.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 17px;border-radius:12px;font-weight:900;text-decoration:none;border:0;cursor:pointer}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{border:1px solid #b8d0ff;color:white;background:transparent}
-.hero-card{background:#fff;border:5px solid var(--gold);color:var(--navy);border-radius:28px;padding:24px;text-align:center;box-shadow:0 16px 35px #0003;transform:rotate(1deg)}.hero-card .big{font-size:5rem}.hero-card strong{font-size:1.45rem;display:block}.hero-card p{color:#40516d;font-size:.95rem;margin-bottom:0}
-main{max-width:1120px;margin:auto;padding:28px 16px 50px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-4px}.trust div{background:white;border:1px solid #e4e9f3;border-radius:15px;padding:15px;text-align:center;font-weight:800}.trust span{display:block;font-size:1.4rem;margin-bottom:5px}
-.section-head{display:flex;justify-content:space-between;gap:15px;align-items:end;flex-wrap:wrap;margin:34px 0 16px}.section-head h2{margin:0;color:var(--navy);font-size:1.8rem}.section-head p{margin:5px 0 0;color:#63708a}
-.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:17px}.tools input,.tools select{border:1px solid #d4dcec;background:white;border-radius:12px;padding:12px;font:inherit;min-width:0}.tools input{flex:1;min-width:180px}
-.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.product{background:white;border:1px solid #e3e8f2;border-radius:18px;overflow:hidden;box-shadow:0 5px 18px #13234b08;display:flex;flex-direction:column}.product-art{height:145px;display:grid;place-items:center;font-size:4rem;background:linear-gradient(140deg,#fff2bf,#f7f9ff);position:relative}.product-art .tag{position:absolute;top:10px;left:10px;font-size:.7rem;background:var(--pink);color:white;border-radius:99px;padding:5px 8px;font-weight:900}.product-body{padding:13px;display:flex;flex-direction:column;gap:8px;flex:1}.product h3{font-size:1rem;margin:0;color:var(--navy)}.product p{margin:0;color:#65718a;font-size:.85rem;line-height:1.4;flex:1}.price{font-weight:950;color:var(--green)}.add{border:0;background:var(--navy);color:white;padding:10px;border-radius:10px;font-weight:850;cursor:pointer}.add:hover{background:var(--blue)}
-.notice{background:#fff5d3;border:1px solid #f3d46d;color:#614700;padding:14px;border-radius:14px;margin-top:18px;font-size:.9rem;line-height:1.5}
-.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.panel{background:white;border:1px solid #e1e7f1;border-radius:18px;padding:20px}.panel h2{margin:0 0 10px;color:var(--navy)}.panel p{line-height:1.6;color:#586780}.contact-number{font-size:1.25rem;font-weight:950;color:var(--green);display:block;margin:8px 0}.pay-list{padding-left:20px;line-height:1.8}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 17px;border-radius:12px;font-weight:900;text-decoration:none;border:0;cursor:pointer}.btn-primary{background:var(--gold);color:var(--navy)}.btn-secondary{background:rgba(255,255,255,.08);color:white;border:1px solid rgba(255,255,255,.18)}
+.hero-card{background:#fff;border:5px solid var(--gold);color:var(--navy);border-radius:28px;padding:24px;text-align:center;box-shadow:0 16px 35px #0003;transform:rotate(1deg)}.hero-card .big{font-size:3.4rem;line-height:1}.hero-card strong{display:block;font-size:1.4rem;margin-top:10px}.hero-card p{margin:12px 0 18px;color:#495a7f}
+main{max-width:1120px;margin:auto;padding:28px 16px 50px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-4px}.trust div{background:white;border:1px solid #e4e9f3;border-radius:14px;padding:11px 14px;font-weight:800;display:flex;align-items:center;gap:8px;color:var(--navy)}
+.section-head{display:flex;justify-content:space-between;gap:15px;align-items:end;flex-wrap:wrap;margin:34px 0 16px}.section-head h2{margin:0;color:var(--navy);font-size:1.8rem}.section-head p{margin:8px 0 0;color:#5d6d8a;line-height:1.5}.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:17px}.tools input,.tools select{border:1px solid #d4dcec;background:white;border-radius:12px;padding:12px;font:inherit;min-width:0}.tools input{flex:1 1 220px}.tools select{min-width:180px}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.product{background:white;border:1px solid #e3e8f2;border-radius:18px;overflow:hidden;box-shadow:0 5px 18px #13234b08;display:flex;flex-direction:column}.product-art{height:128px;background:linear-gradient(135deg,#f9f7ff,#eef5ff);display:grid;place-items:center;position:relative;font-size:3.3rem}.tag{position:absolute;left:10px;top:10px;border-radius:999px;background:rgba(7,27,73,.08);padding:5px 8px;font-size:.67rem;font-weight:800;color:var(--navy)}.product-body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}.product-body h3{margin:0;font-size:1.05rem;color:var(--navy)}.product-body p{margin:0;color:#5d6d8a;font-size:.9rem;line-height:1.5}.product-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto}.price{font-weight:900;color:var(--green)}.add-btn{background:var(--navy);color:white;border:0;border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:800}.notice{background:#fff5d3;border:1px solid #f3d46d;color:#614700;padding:14px;border-radius:14px;margin-top:18px;font-size:.9rem;line-height:1.5}.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.panel{background:white;border:1px solid #e1e7f1;border-radius:18px;padding:20px}.panel h2{margin:0 0 10px;color:var(--navy)}.panel p,.panel li{color:#485a7a;line-height:1.6}.panel ul{margin:12px 0 0;padding-left:20px}
 footer{background:var(--navy);color:white;padding:25px 16px;text-align:center}footer strong{color:var(--gold)}footer p{margin:7px}
-.cart-drawer{position:fixed;inset:0;background:#06122c99;display:none;z-index:10;justify-content:flex-end}.cart-drawer.open{display:flex}.cart-panel{background:white;width:min(440px,100%);height:100%;padding:20px;overflow:auto;box-shadow:-12px 0 35px #0002}.cart-top{display:flex;justify-content:space-between;align-items:center}.cart-top h2{margin:0;color:var(--navy)}.close{border:0;background:#eef2f9;border-radius:10px;padding:9px 12px;font-size:1.2rem;cursor:pointer}.cart-items{margin:18px 0}.cart-item{display:grid;grid-template-columns:1fr auto;gap:8px;padding:12px 0;border-bottom:1px solid #e5e9f1}.qty{display:flex;gap:8px;align-items:center}.qty button{border:0;border-radius:8px;padding:5px 9px;background:#e9eef8;cursor:pointer;font-weight:900}.cart-total{display:flex;justify-content:space-between;font-size:1.1rem;font-weight:950;border-top:2px solid #e5e9f1;padding-top:14px}.cart-form{display:grid;gap:10px;margin-top:18px}.cart-form label{font-size:.85rem;font-weight:800}.cart-form input,.cart-form select,.cart-form textarea{width:100%;padding:11px;border:1px solid #d4dcec;border-radius:10px;font:inherit}.cart-form .btn{width:100%}.tiny{font-size:.78rem;color:#65718a;line-height:1.45}.empty{text-align:center;padding:35px 5px;color:#65718a}
-@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-card{display:none}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:1fr}nav{width:100%;justify-content:space-between}.trust{grid-template-columns:1fr}.hero{padding-top:32px}}
+.cart-drawer{position:fixed;inset:0;background:#06122c99;display:none;z-index:10;justify-content:flex-end}.cart-drawer.open{display:flex}.cart-panel{background:white;width:min(440px,100%);height:100%;overflow:auto;padding:18px}.cart-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.cart-top h2{margin:0;color:var(--navy)}.close{border:0;background:#eef2ff;color:var(--navy);border-radius:999px;width:34px;height:34px;cursor:pointer;font-size:1.2rem}.cart-items{display:grid;gap:12px}.cart-item{display:flex;justify-content:space-between;gap:12px;padding:12px;border:1px solid #e7ebf5;border-radius:12px;background:#f9fbff}.cart-item strong{display:block;font-size:1rem}.cart-item .tiny{color:#5b6d89}.qty{display:flex;align-items:center;gap:8px}.qty button{width:28px;height:28px;border:1px solid #ced9ef;background:white;border-radius:8px;cursor:pointer}.cart-total{display:flex;justify-content:space-between;align-items:center;padding:14px 0 12px;border-top:1px solid #e7ebf5;margin-top:12px;font-weight:900;color:var(--navy)}.cart-form{display:grid;gap:10px;margin-top:10px}.cart-form label{display:grid;gap:6px;font-weight:700;color:var(--navy)}.cart-form input,.cart-form select,.cart-form textarea{width:100%;padding:11px;border:1px solid #d4dcec;border-radius:10px;font:inherit}.btn-gold{background:var(--gold);color:var(--navy);width:100%;margin-top:6px}.tiny{font-size:.78rem;line-height:1.45;color:#65738c}.empty{text-align:center;padding:30px 12px;color:#6b7a93}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.hero-card{display:none}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:1fr}nav{width:100%;justify-content:space-between}}
 @media(max-width:390px){.product-art{height:115px;font-size:3rem}.product-body{padding:10px}.brand h1{font-size:1.35rem}.hero h2{font-size:2.2rem}}
-
-.poster-section{margin:30px 0 34px}
-.poster-frame{background:#071b49;border-radius:22px;padding:10px;box-shadow:0 12px 30px #10204a20;overflow:hidden}
-.poster-frame img{display:block;width:100%;height:auto;max-height:1000px;object-fit:contain;border-radius:14px}
-.poster-caption{text-align:center;color:#53627a;font-size:.9rem;margin:10px 0 0}
-.admin-wrap{margin-top:30px}
-.admin-login,.admin-panel{background:white;border:1px solid #dfe6f2;border-radius:18px;padding:20px}
-.admin-login{max-width:560px}
-.admin-login h2,.admin-panel h2,.admin-panel h3{margin-top:0;color:var(--navy)}
-.admin-form{display:grid;gap:10px}
-.admin-form input,.admin-form select,.admin-form textarea{width:100%;padding:11px;border:1px solid #d4dcec;border-radius:10px;font:inherit}
-.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.admin-btn{border:0;border-radius:10px;padding:10px 13px;background:var(--navy);color:white;font-weight:850;cursor:pointer}
-.admin-btn.gold{background:var(--gold);color:var(--navy)}
-.admin-btn.danger{background:#b42336;color:white}
-.admin-list{display:grid;gap:9px;margin-top:15px}
-.admin-product{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:12px;border:1px solid #e3e8f2;border-radius:12px}
-.admin-product small{display:block;color:#64718a;margin-top:4px}
-.admin-note{background:#fff5d3;border:1px solid #f3d46d;border-radius:12px;padding:13px;line-height:1.5;color:#614700;font-size:.9rem;margin:12px 0}
-.admin-status{font-weight:800;margin-top:10px;color:var(--green)}
-@media(max-width:600px){.admin-grid{grid-template-columns:1fr}.admin-product{grid-template-columns:1fr}.poster-frame{padding:6px}}
-
+.poster-section{margin:30px 0 34px}.poster-frame{background:#071b49;border-radius:22px;padding:10px;box-shadow:0 12px 30px #10204a20;overflow:hidden}.poster-frame img{display:block;width:100%;height:auto;max-height:1000px;object-fit:contain;border-radius:14px}.poster-caption{text-align:center;color:#53627a;font-size:.9rem;margin:10px 0 0}.admin-wrap{margin-top:30px}.admin-login,.admin-panel{background:white;border:1px solid #dfe6f2;border-radius:18px;padding:20px}.admin-login{max-width:560px}.admin-login h2,.admin-panel h2,.admin-panel h3{margin-top:0;color:var(--navy)}.admin-form{display:grid;gap:10px}.admin-form input,.admin-form select,.admin-form textarea{width:100%;padding:11px;border:1px solid #d4dcec;border-radius:10px;font:inherit}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.admin-btn{border:0;border-radius:10px;padding:10px 13px;background:var(--navy);color:white;font-weight:850;cursor:pointer}.admin-btn.gold{background:var(--gold);color:var(--navy)}.admin-btn.danger{background:#b42336;color:white}.admin-list{display:grid;gap:9px;margin-top:15px}.admin-product{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:12px;border:1px solid #e3e8f2;border-radius:12px}.admin-product small{display:block;color:#64718a;margin-top:4px}.admin-note{background:#fff5d3;border:1px solid #f3d46d;border-radius:12px;padding:13px;line-height:1.5;color:#614700;font-size:.9rem;margin:12px 0}.admin-status{font-weight:800;margin-top:10px;color:var(--green)}@media(max-width:600px){.admin-grid{grid-template-columns:1fr}.admin-product{grid-template-columns:1fr}.poster-frame{padding:6px}}
 </style>
 </head>
 <body>
 <div class="topline">📍 Gorom-Gorom, au marché &nbsp; • &nbsp; Commandes faciles sur WhatsApp</div>
 <header>
   <a class="brand" href="#" aria-label="Accueil Raki Chop"><div class="logo">🛍️</div><div><h1>Raki Chop</h1><small>LA QUALITÉ AU MEILLEUR PRIX</small></div></a>
-  <nav><a href="#catalogue">Catalogue</a><a href="#boutique">Notre boutique</a><a href="#paiement">Paiement</a><a href="#administration">Admin</a><button class="cart-pill" onclick="openCart()">🛒 Panier (<span id="cartCount">0</span>)</button></nav>
+  <nav><a href="#catalogue">Catalogue</a><a href="#boutique">Notre boutique</a><a href="#paiement">Paiement</a><a href="#administration">Admin</a><button class="cart-pill" onclick="openCart()">🛒 Panier <span id="cartCount">0</span></button></nav>
 </header>
 <section class="hero">
   <div class="hero-inner">
-    <div><span class="kicker">✨ Tout ce dont vous avez besoin au même endroit</span><h2>Le bonheur des petits.<br><span>Le style de toute la famille.</span></h2><p>Découvrez nos pommades et soins, vêtements pour bébés, biberons, chaussures, pagnes, sacs et bien d’autres articles. Choisissez vos produits et envoyez votre commande directement sur WhatsApp.</p><div class="ctas"><a class="btn btn-gold" href="#catalogue">Découvrir les articles ↓</a><button class="btn btn-outline" onclick="openCart()">Voir mon panier 🛒</button></div></div>
-    <div class="hero-card"><div class="big">🧴👶🏾👗👡</div><strong>Découvrez toute la boutique !</strong><p>Consultez notre affiche et choisissez vos articles préférés.</p><a class="btn btn-gold" href="#affiche">Voir l’affiche ↓</a></div>
+    <div><span class="kicker">✨ Tout ce dont vous avez besoin au même endroit</span><h2>Le bonheur des petits.<br><span>Le style de toute la famille.</span></h2><p>Découvrez nos pommades et soins, articles de bébé, chaussures, pagnes, sacs et accessoires pour toute la famille.</p><div class="ctas"><a class="btn btn-primary" href="#catalogue">Voir le catalogue</a><a class="btn btn-secondary" href="#boutique">Nous trouver</a></div></div>
+    <div class="hero-card"><div class="big">🧴👶🏾👗👡</div><strong>Découvrez toute la boutique !</strong><p>Consultez notre affiche et choisissez vos articles préférés.</p><a class="btn btn-primary" href="#affiche">Découvrir</a></div>
   </div>
 </section>
 <main>
@@ -77,25 +50,24 @@ footer{background:var(--navy);color:white;padding:25px 16px;text-align:center}fo
 
   <section id="catalogue">
     <div class="section-head"><div><h2>Notre catalogue</h2><p>Choisissez vos articles et ajoutez-les au panier.</p></div></div>
-    <div class="tools"><input id="search" type="search" placeholder="🔎 Rechercher un produit…" oninput="renderProducts()"><select id="category" onchange="renderProducts()"><option value="Tous">Toutes les catégories</option><option>Pommades & soins</option><option>Articles de bébé</option><option>Vêtements</option><option>Chaussures</option><option>Pagnes & tissus</option><option>Sacs & accessoires</option><option>Hygiène & maison</option></select></div>
+    <div class="tools"><input id="search" type="search" placeholder="🔎 Rechercher un produit…" oninput="renderProducts()"><select id="category" onchange="renderProducts()"><option value="Tous">Toutes catégories</option><option>Pommades & soins</option><option>Articles de bébé</option><option>Vêtements</option><option>Chaussures</option><option>Pagnes & tissus</option><option>Sacs & accessoires</option><option>Hygiène & maison</option></select></div>
     <div class="products" id="products"></div>
-    <div class="notice"><strong>À savoir :</strong> les prix affichés doivent être vérifiés par la boutique. L’espace Administrateur permet de renseigner les prix et de gérer les articles sur cet appareil. Confirmez toujours la disponibilité avant de payer.</div>
+    <div class="notice"><strong>À savoir :</strong> les prix ne sont pas affichés sur le site. Le commerçant et le client peuvent les discuter directement avant validation de la commande.</div>
   </section>
   <div class="columns">
-    <section class="panel" id="boutique"><h2>📍 Où nous trouver ?</h2><p><strong>Raki Chop</strong><br>Gorom-Gorom, au marché, Burkina Faso.</p><p>Besoin d’un renseignement, d’une taille ou du prix d’un article ? Écrivez-nous directement.</p><a class="btn btn-gold" href="https://wa.me/22657044609" target="_blank" rel="noopener">Écrire sur WhatsApp</a></section>
-    <section class="panel" id="paiement"><h2>💳 Paiement Mobile Money</h2><p>Le site peut préparer votre commande, mais le paiement n’est pas encaissé automatiquement pour le moment.</p><ul class="pay-list"><li>Envoyez votre panier sur WhatsApp.</li><li>Confirmez le total, la disponibilité et le mode de livraison avec la boutique.</li><li>Demandez au vendeur le numéro Mobile Money officiel avant tout transfert.</li><li>Envoyez la preuve de paiement uniquement au contact confirmé.</li></ul><p class="tiny">Pour votre sécurité, aucun numéro de compte Mobile Money n’est affiché tant qu’il n’a pas été confirmé par la boutique.</p></section>
+    <section class="panel" id="boutique"><h2>📍 Où nous trouver ?</h2><p><strong>Raki Chop</strong><br>Gorom-Gorom, au marché, Burkina Faso.</p><p>Besoin d’un renseignement, d’une taille ou du meilleur prix selon votre choix ? Le vendeur vous répondra directement au moment de la commande.</p></section>
+    <section class="panel" id="paiement"><h2>💳 Paiement Mobile Money</h2><p>Le site peut préparer votre commande, mais le paiement n’est pas encaissé automatiquement pour le moment.</p><ul><li>Le vendeur confirme le montant avec vous.</li><li>Le paiement s’effectue selon votre moyen préféré.</li><li>La commande est ensuite envoyée sur WhatsApp pour validation.</li></ul></section>
   </div>
 
   <section class="admin-wrap" id="administration">
-    <div class="section-head"><div><h2>🔐 Espace Administrateur</h2><p>Ajoutez les articles disponibles et modifiez les prix.</p></div></div>
-    <div class="admin-note"><strong>Important :</strong> cette version gratuite enregistre les changements dans le navigateur utilisé. Elle ne synchronise pas automatiquement les prix avec les téléphones des clients. Le code d’accès est une protection de démonstration, pas une sécurité suffisante pour un vrai site public.</div>
+    <div class="section-head"><div><h2>🔐 Espace Administrateur</h2><p>Ajoutez les articles disponibles et modifiez les détails du catalogue.</p></div></div>
+    <div class="admin-note"><strong>Important :</strong> cette version gratuite enregistre les changements dans le navigateur utilisé. Les prix restent à discuter directement avec le commerçant avant toute commande.</div>
     <div class="admin-login" id="adminLogin">
       <h3>Connexion administrateur</h3>
       <form class="admin-form" onsubmit="unlockAdmin(event)">
         <label>Code d’accès<input id="adminPin" type="password" placeholder="Entrer le code administrateur" required autocomplete="current-password"></label>
         <button class="admin-btn gold" type="submit">Ouvrir l’administration</button>
       </form>
-      <p class="tiny">Code de démonstration initial : <strong>RAKI2026</strong>. Changez-le dans le code avant publication.</p>
       <p class="admin-status" id="adminLoginStatus" aria-live="polite"></p>
     </div>
     <div class="admin-panel" id="adminPanel" hidden>
@@ -104,7 +76,6 @@ footer{background:var(--navy);color:white;padding:25px 16px;text-align:center}fo
         <input id="editProductId" type="hidden">
         <div class="admin-grid">
           <label>Nom du produit<input id="adminProductName" placeholder="Ex. Pommade Coco Pulp" required></label>
-          <label>Prix en F CFA<input id="adminProductPrice" type="number" min="0" step="1" placeholder="Ex. 1500"></label>
           <label>Catégorie<select id="adminProductCategory" required>
             <option>Pommades & soins</option><option>Articles de bébé</option><option>Vêtements</option><option>Chaussures</option><option>Pagnes & tissus</option><option>Sacs & accessoires</option><option>Hygiène & maison</option>
           </select></label>
@@ -115,13 +86,12 @@ footer{background:var(--navy);color:white;padding:25px 16px;text-align:center}fo
       </form>
       <h3 style="margin-top:25px">📦 Produits du catalogue</h3>
       <div id="adminProductsList" class="admin-list"></div>
-      <div class="admin-actions"><button class="admin-btn" type="button" onclick="exportProducts()">Exporter le catalogue (sauvegarde)</button><button class="admin-btn danger" type="button" onclick="adminLogout()">Fermer la session</button></div>
-      <p class="tiny">Pour modifier un prix, appuyez sur « Modifier » à côté du produit, changez le prix, puis enregistrez.</p>
+      <div class="admin-actions"><button class="admin-btn" type="button" onclick="exportProducts()">Exporter le catalogue (sauvegarde)</button><button class="admin-btn danger" type="button" onclick="adminLogout()">Fermer l’administration</button></div>
     </div>
   </section>
 
 </main>
-<footer><strong>Raki Chop</strong><p>La qualité au meilleur prix !</p><p>Gorom-Gorom — au marché</p><p>WhatsApp : 57 04 46 09 / 70 44 97 06</p><p class="tiny" style="color:#d5e0fa">© <span id="year"></span> Raki Chop. Tous droits réservés.</p></footer>
+<footer><strong>Raki Chop</strong><p>La qualité au meilleur prix !</p><p>Gorom-Gorom — au marché</p><p>WhatsApp : 57 04 46 09 / 70 44 97 06</p><p class="tiny" style="color:#d5e0fa">© <span id="year"></span> Raki Chop</p></footer>
 <div class="cart-drawer" id="cartDrawer" onclick="if(event.target===this)closeCart()">
  <div class="cart-panel"><div class="cart-top"><h2>🛒 Mon panier</h2><button class="close" onclick="closeCart()" aria-label="Fermer">✕</button></div>
  <div id="cartItems" class="cart-items"></div><div class="cart-total"><span>Total indicatif</span><span id="cartTotal">À confirmer</span></div>
@@ -137,11 +107,11 @@ footer{background:var(--navy);color:white;padding:25px 16px;text-align:center}fo
 </div>
 <script>
 const productsData = [
- {id:1,name:"Coco Pulp",cat:"Pommades & soins",emoji:"🥥",desc:"Pommade / soin — prix à confirmer",price:null},
- {id:2,name:"Paw Paw",cat:"Pommades & soins",emoji:"🧴",desc:"Soin de la peau — prix à confirmer",price:null},
+ {id:1,name:"Coco Pulp",cat:"Pommades & soins",emoji:"🥥",desc:"Pommade / soin — prix à discuter avec le vendeur",price:null},
+ {id:2,name:"Paw Paw",cat:"Pommades & soins",emoji:"🧴",desc:"Soin de la peau — prix à discuter avec le vendeur",price:null},
  {id:3,name:"Caro White",cat:"Pommades & soins",emoji:"🫙",desc:"Crème — vérifier l’étiquette et la composition",price:null},
- {id:4,name:"Jaune d’œuf",cat:"Pommades & soins",emoji:"🥚",desc:"Crème — prix à confirmer",price:null},
- {id:5,name:"Vaseline",cat:"Pommades & soins",emoji:"💙",desc:"Soin hydratant — prix à confirmer",price:null},
+ {id:4,name:"Jaune d’œuf",cat:"Pommades & soins",emoji:"🥚",desc:"Crème — prix à discuter avec le vendeur",price:null},
+ {id:5,name:"Vaseline",cat:"Pommades & soins",emoji:"💙",desc:"Soin hydratant — prix à discuter avec le vendeur",price:null},
  {id:6,name:"Crèmes et huiles bébé",cat:"Pommades & soins",emoji:"🧴",desc:"Différentes références selon disponibilité",price:null},
  {id:7,name:"Ensemble bébé",cat:"Vêtements",emoji:"👕",desc:"Tailles et couleurs à demander",price:null},
  {id:8,name:"Body pour bébé",cat:"Vêtements",emoji:"👶🏾",desc:"Différentes tailles",price:null},
@@ -166,21 +136,20 @@ function loadProducts(){
 }
 function saveProducts(){localStorage.setItem('rakiChopProducts',JSON.stringify(productsData));}
 productsData.splice(0,productsData.length,...loadProducts());
-function priceLabel(p){return p.price!==null&&p.price!==''&&Number.isFinite(Number(p.price))?money(Number(p.price)):'Prix à confirmer';}
+function priceLabel(p){return 'Prix à convenir avec le vendeur';}
 function renderProducts(){
  const term=(document.getElementById('search').value||'').toLowerCase();
  const cat=document.getElementById('category').value;
  const filtered=productsData.filter(p=>(cat==='Tous'||p.cat===cat)&&(p.name+' '+p.desc+' '+p.cat).toLowerCase().includes(term));
- document.getElementById('products').innerHTML=filtered.map(p=>`<article class="product"><div class="product-art"><span class="tag">${p.cat}</span>${p.emoji}</div><div class="product-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${priceLabel(p)}</div><button class="add" onclick="addToCart(${p.id})">＋ Ajouter au panier</button></div></article>`).join('')||'<p>Aucun produit trouvé.</p>';
+ document.getElementById('products').innerHTML=filtered.map(p=>`<article class="product"><div class="product-art"><span class="tag">${p.cat}</span>${p.emoji}</div><div class="product-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="product-meta"><span class="price">${priceLabel(p)}</span><button class="add-btn" onclick="addToCart(${p.id})">+ Ajouter</button></div></div></article>`).join('');
 }
 function addToCart(id){cart[id]=(cart[id]||0)+1;updateCart();document.getElementById('cartCount').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
 function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];updateCart();document.getElementById('cartCount').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}
 function updateCart(){
  const ids=Object.keys(cart);const box=document.getElementById('cartItems');
- if(!ids.length){box.innerHTML='<div class="empty">Votre panier est vide.<br><br>Ajoutez quelques articles du catalogue.</div>';document.getElementById('cartTotal').textContent='0 article';return}
- box.innerHTML=ids.map(id=>{const p=productsData.find(x=>x.id==id);return `<div class="cart-item"><div><strong>${p.emoji} ${p.name}</strong><div class="tiny">${p.cat} — ${priceLabel(p)}</div></div><div class="qty"><button type="button" onclick="changeQty(${p.id},-1)">−</button><strong>${cart[id]}</strong><button type="button" onclick="changeQty(${p.id},1)">＋</button></div></div>`}).join('');
- const totalKnown=ids.every(id=>{const p=productsData.find(x=>x.id==id);return p&&p.price!==null&&p.price!==''&&Number.isFinite(Number(p.price));});
- document.getElementById('cartTotal').textContent=totalKnown?money(ids.reduce((sum,id)=>sum+Number(productsData.find(x=>x.id==id).price)*cart[id],0)):'À confirmer';
+ if(!ids.length){box.innerHTML='<div class="empty">Votre panier est vide.<br><br>Ajoutez quelques articles du catalogue.</div>';document.getElementById('cartTotal').textContent='À convenir';return}
+ box.innerHTML=ids.map(id=>{const p=productsData.find(x=>x.id==id);return `<div class="cart-item"><div><strong>${p.emoji} ${p.name}</strong><div class="tiny">${p.cat} — ${priceLabel(p)}</div></div><div class="qty"><button type="button" onclick="changeQty(${id},-1)">−</button><span>${cart[id]}</span><button type="button" onclick="changeQty(${id},1)">+</button></div></div>`;}).join('');
+ document.getElementById('cartTotal').textContent='À convenir avec le vendeur';
 }
 function openCart(){updateCart();document.getElementById('cartDrawer').classList.add('open');document.body.style.overflow='hidden'}
 function closeCart(){document.getElementById('cartDrawer').classList.remove('open');document.body.style.overflow=''}
@@ -188,7 +157,7 @@ function sendOrder(e){
  e.preventDefault();const ids=Object.keys(cart);if(!ids.length){alert('Ajoutez au moins un article au panier.');return}
  const name=document.getElementById('customerName').value.trim(),phone=document.getElementById('customerPhone').value.trim(),pay=document.getElementById('paymentMethod').value,note=document.getElementById('customerNote').value.trim();
  const lines=ids.map(id=>{const p=productsData.find(x=>x.id==id);return `- ${p.name} x ${cart[id]} (${priceLabel(p)})`}).join('\n');
- const msg=`Bonjour Raki Chop ! Je souhaite passer une commande.\n\nNom : ${name}\nTéléphone : ${phone}\nArticles :\n${lines}\n\nMode de paiement souhaité : ${pay}\nPrécisions : ${note||'Aucune'}\n\nMerci de confirmer le prix total, la disponibilité et les modalités de paiement/livraison.`;
+ const msg=`Bonjour Raki Chop ! Je souhaite passer une commande.\n\nNom : ${name}\nTéléphone : ${phone}\nArticles :\n${lines}\n\nMode de paiement souhaité : ${pay}\nPrécisions : ${note||'Aucune'}\n\nMerci.`;
  const target=prompt('Choisir le contact WhatsApp : tapez 1 pour 57 04 46 09 ou 2 pour 70 44 97 06','1');
  if(target===null)return;const number=target.trim()==='2'?'22670449706':'22657044609';
  window.open('https://wa.me/'+number+'?text='+encodeURIComponent(msg),'_blank','noopener');
@@ -208,23 +177,21 @@ function saveAdminProduct(e){
  const name=document.getElementById('adminProductName').value.trim(),cat=document.getElementById('adminProductCategory').value;
  const emoji=document.getElementById('adminProductEmoji').value.trim()||'🛍️';
  const desc=document.getElementById('adminProductDesc').value.trim()||'Disponible chez Raki Chop';
- const rawPrice=document.getElementById('adminProductPrice').value,price=rawPrice===''?null:Number(rawPrice);
+ const price=null;
  if(idField){const p=productsData.find(x=>x.id===Number(idField));if(p)Object.assign(p,{name,cat,emoji,desc,price});}
  else {const id=Math.max(0,...productsData.map(p=>Number(p.id)||0))+1;productsData.push({id,name,cat,emoji,desc,price});}
  saveProducts();renderProducts();renderAdminProducts();updateCart();resetAdminForm();
 }
 function editAdminProduct(id){
  if(!adminUnlocked)return;const p=productsData.find(x=>x.id===id);if(!p)return;
- document.getElementById('editProductId').value=p.id;document.getElementById('adminProductName').value=p.name;
- document.getElementById('adminProductPrice').value=p.price==null?'':p.price;document.getElementById('adminProductCategory').value=p.cat;
- document.getElementById('adminProductEmoji').value=p.emoji||'🛍️';document.getElementById('adminProductDesc').value=p.desc||'';
+ document.getElementById('editProductId').value=p.id;document.getElementById('adminProductName').value=p.name;document.getElementById('adminProductCategory').value=p.cat;document.getElementById('adminProductEmoji').value=p.emoji||'🛍️';document.getElementById('adminProductDesc').value=p.desc||'';
  document.getElementById('productForm').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function deleteAdminProduct(id){
  if(!adminUnlocked)return;const p=productsData.find(x=>x.id===id);if(!p||!confirm('Supprimer « '+p.name+' » du catalogue ?'))return;
  const index=productsData.findIndex(x=>x.id===id);if(index>=0)productsData.splice(index,1);delete cart[id];saveProducts();renderProducts();renderAdminProducts();updateCart();
 }
-function escapeHtml(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
+function escapeHtml(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[ch]));}
 function renderAdminProducts(){
  if(!adminUnlocked)return;const list=document.getElementById('adminProductsList');
  if(!productsData.length){list.innerHTML='<p>Aucun produit. Ajoutez le premier article ci-dessus.</p>';return}
