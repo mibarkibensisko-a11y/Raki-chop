@@ -1,0 +1,26 @@
+RAKI CHOP — SITE WEB (VERSION DE DÉMONSTRATION)
+
+Contenu
+- index.html : site mobile avec catalogue, panier et commandes par WhatsApp.
+- affiche-raki-chop.png : affiche publicitaire visible sur la page d’accueil.
+- Espace Administrateur : ajouter, modifier les prix/descriptions/catégories et supprimer les produits.
+- Export du catalogue au format JSON pour sauvegarde.
+
+Tester sur Android
+1. Décompressez raki_chop_site.zip.
+2. Ouvrez index.html avec Chrome.
+3. Descendez à « Espace Administrateur ».
+4. Code de démonstration : RAKI2026.
+5. Ajoutez/modifiez un produit puis enregistrez.
+
+IMPORTANT — LIMITES DE LA VERSION GRATUITE STATIQUE
+- Les modifications sont enregistrées dans le stockage local du navigateur sur cet appareil uniquement.
+- Les prix ne se synchronisent pas automatiquement avec les visiteurs qui ouvrent le site sur d'autres téléphones.
+- Le code d'accès est visible dans le code source et ne protège pas réellement un site public.
+- Pour une vraie boutique publique avec un administrateur sécurisé et un catalogue synchronisé pour tous les clients, il faudra connecter une base de données et une authentification (par exemple Supabase/Firebase) ou un service e-commerce. On peut le faire avec une offre gratuite, mais il faut configurer le service.
+- Le site prépare les commandes WhatsApp. Il ne traite pas automatiquement les paiements Mobile Money.
+- Vérifiez les prix, photos, disponibilités et coordonnées avant la publication publique.
+
+Contacts affichés
+WhatsApp : +226 57 04 46 09 / +226 70 44 97 06
+Adresse : Gorom-Gorom, au marché
