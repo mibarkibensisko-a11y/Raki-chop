@@ -1,0 +1,18 @@
+{
+  "name": "Raki Chop",
+  "short_name": "Raki Chop",
+  "description": "Boutique Raki Chop - catalogue et commandes",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#071b49",
+  "theme_color": "#071b49",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
